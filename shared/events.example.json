@@ -1,0 +1,6 @@
+[
+  {"schema_version": 1, "device_id": "desk-01", "session_id": "example-session", "seq": 1, "timestamp_ms": 1000, "source": "simulated", "mode": "surface_touch", "event": "hover", "x": 0.20, "y": 0.50, "distance_mm": 30.0, "confidence": null},
+  {"schema_version": 1, "device_id": "desk-01", "session_id": "example-session", "seq": 2, "timestamp_ms": 1100, "source": "simulated", "mode": "surface_touch", "event": "touch_down", "x": 0.20, "y": 0.50, "distance_mm": 2.0, "confidence": null},
+  {"schema_version": 1, "device_id": "desk-01", "session_id": "example-session", "seq": 3, "timestamp_ms": 1200, "source": "simulated", "mode": "surface_touch", "event": "touch_up", "x": 0.20, "y": 0.50, "distance_mm": 20.0, "confidence": null},
+  {"schema_version": 1, "device_id": "desk-01", "session_id": "example-session", "seq": 4, "timestamp_ms": 1300, "source": "simulated", "mode": "surface_touch", "event": "tracking_lost", "x": null, "y": null, "distance_mm": null, "confidence": null}
+]

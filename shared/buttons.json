@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "buttons": [
+    {"id": "led_on", "label": "LED 開", "x_min": 0.05, "x_max": 0.30, "y_min": 0.20, "y_max": 0.80, "action": "led_on", "enabled": true},
+    {"id": "led_off", "label": "LED 關", "x_min": 0.375, "x_max": 0.625, "y_min": 0.20, "y_max": 0.80, "action": "led_off", "enabled": true},
+    {"id": "servo_preset", "label": "Servo（待確認）", "x_min": 0.70, "x_max": 0.95, "y_min": 0.20, "y_max": 0.80, "action": "servo_preset", "enabled": false}
+  ]
+}

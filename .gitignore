@@ -1,0 +1,25 @@
+# Secrets / local deployment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+flows_cred.json
+
+# Python / editors / OS
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated and private measurements
+data/
+logs/
+*.log
+node_modules/
+dist/
+coverage/

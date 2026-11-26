@@ -23,3 +23,19 @@ logs/
 node_modules/
 dist/
 coverage/
+
+# Local vision models, media and temporary artifacts
+models/
+*.task
+*.onnx
+*.tflite
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.tmp
+
+# Stereo captures, calibration NPZ and private camera identities belong in data/.
+# Keep vision/config/*.example.json in version control.
+*.npz
+stereo_mapping.local.json

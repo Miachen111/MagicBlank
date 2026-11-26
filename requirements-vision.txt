@@ -1,0 +1,11 @@
+# 草稿候選依賴：尚未安裝或驗證；不是已確認可重現的環境。
+# 此為既有單路手部追蹤環境；Pi 雙路校正依賴見 vision/DEPENDENCIES.md。
+# 不與 requirements-calibration.txt 同環境混裝。
+# 須先確認 Pi 5 OS／CPU 架構／Python 與 MediaPipe Tasks 的可用版本。
+numpy
+mediapipe
+# 只選一種提供 cv2 的套件；預覽視窗需要 GUI 版本。
+# 採 contrib 發行包以配合部分 MediaPipe 版本的相依需求；僅使用基本 cv2 API。
+# Pi 若沿用系統 python3-opencv，請勿再安裝此項，見 vision/README.md。
+opencv-contrib-python
+# Picamera2／libcamera 由相容的 Pi 系統環境提供，不放入 pip 清單。

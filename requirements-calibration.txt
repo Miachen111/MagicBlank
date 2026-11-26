@@ -1,0 +1,5 @@
+# 僅供之後 Windows／離線校正環境；尚未安裝或驗證版本組合。
+# Pi 使用 apt python3-opencv／python3-numpy 時，不要再裝此清單。
+# 不與 requirements-vision.txt 混裝，以免重複提供 cv2。
+numpy
+opencv-python

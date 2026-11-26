@@ -1,4 +1,4 @@
-"""Print JSON Lines for one simulated cycle; does not connect to MQTT or GPIO."""
+"""Print one simulated cycle as JSON Lines; no MQTT or GPIO connection."""
 
 import json
 import sys
@@ -10,7 +10,10 @@ from check_contract import validate_event
 
 def main():
     session = str(uuid.uuid4())
-    steps = (("hover", 30.0), ("touch_down", 2.0), ("touch_up", 20.0), ("tracking_lost", None))
+    steps = (
+        ("hover", 30.0), ("touch_down", 2.0),
+        ("touch_up", 20.0), ("tracking_lost", None),
+    )
     for seq, (name, distance) in enumerate(steps, start=1):
         lost = name == "tracking_lost"
         event = {
@@ -22,7 +25,9 @@ def main():
         }
         validate_event(event)
         print(json.dumps(event, allow_nan=False), flush=True)
-    print("Simulated data only; no hardware actions executed.", file=sys.stderr)
+    print(
+        "Simulated data only; no hardware actions executed.", file=sys.stderr
+    )
 
 
 if __name__ == "__main__":
